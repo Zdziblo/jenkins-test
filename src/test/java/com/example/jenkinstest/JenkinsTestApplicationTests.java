@@ -25,7 +25,7 @@ class JenkinsTestApplicationTests {
         RequestBuilder request = MockMvcRequestBuilders.get("/");
         ResultHandler result = MockMvcResultHandlers.print();
         ResultMatcher resultMatcher = MockMvcResultMatchers.status().isOk();
-        ResultMatcher resultMatcherb = MockMvcResultMatchers.content().string("Hello World");
+        ResultMatcher resultMatcherb = MockMvcResultMatchers.content().string("Helloworld");
         mockMvc
                 .perform(request)
                 .andDo(result)
